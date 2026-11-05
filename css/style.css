@@ -67,9 +67,12 @@ section {
 }
 
 section img {
+    width: 300px;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    display: block;
+    margin: 15px auto;
 }
 
 /* Banner Section */
