@@ -19,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="#matches">Matches</a></li>
-                <li><a href="#booking">Book Ticket</a></li>
+                <li><a href="booking.html">Book Ticket</a></li>
                 <li><a href="#mybookings">My Bookings</a></li>
                 <li><a href="#guidelines">Guidelines</a></li>
             </ul>
@@ -30,22 +30,25 @@
 
         <!-- Banner Section -->
         <section id="home">
-            <img src="images/IPL 2026 Stadium Energy Poster.png" alt="IPL 2026 Banner">
+            <img src="images/IPL 2026 Stadium Energy Poster.png"
+                 alt="IPL 2026 Banner">
 
             <h2>Experience The Stadium Energy Live!</h2>
+
             <p>Book your tickets and enjoy the excitement of IPL 2026.</p>
 
             <button onclick="location.href='#matches'">
                 View Schedule
             </button>
 
-            <button onclick="location.href='#booking'">
+            <button onclick="location.href='booking.html'">
                 Book Ticket
             </button>
         </section>
 
         <!-- About IPL Section -->
         <section id="about">
+
             <h2>About IPL 2026</h2>
 
             <p>
@@ -55,6 +58,7 @@
             </p>
 
             <h3>Popular Teams</h3>
+
             <ul>
                 <li>Chennai Super Kings (CSK)</li>
                 <li>Mumbai Indians (MI)</li>
@@ -64,16 +68,19 @@
             </ul>
 
             <h3>Major Venues</h3>
+
             <ul>
                 <li>M. A. Chidambaram Stadium, Chennai</li>
                 <li>Wankhede Stadium, Mumbai</li>
                 <li>M. Chinnaswamy Stadium, Bengaluru</li>
                 <li>Eden Gardens, Kolkata</li>
             </ul>
+
         </section>
 
         <!-- Match Schedule Section -->
         <section id="matches">
+
             <h2>Match Schedule</h2>
 
             <label for="team">Filter by Team:</label>
@@ -108,7 +115,7 @@
                     <td>Rs. 500</td>
                     <td>Rs. 1500</td>
                     <td>Rs. 3000</td>
-                    <td><a href="#booking">Book Now</a></td>
+                    <td><a href="booking.html">Book Now</a></td>
                 </tr>
 
                 <tr>
@@ -119,74 +126,29 @@
                     <td>Rs. 600</td>
                     <td>Rs. 1800</td>
                     <td>Rs. 3500</td>
-                    <td><a href="#booking">Book Now</a></td>
+                    <td><a href="booking.html">Book Now</a></td>
                 </tr>
+
             </table>
+
         </section>
 
         <!-- Ticket Booking Section -->
         <section id="booking">
+
             <h2>Book Your Tickets</h2>
 
-            <form>
-                <label for="match">Select Match:</label>
-                <select id="match" name="match" required>
-                    <option value="">Choose a match</option>
-                    <option value="CSK vs MI">CSK vs MI</option>
-                    <option value="RCB vs KKR">RCB vs KKR</option>
-                </select>
+            <p>Click below to open the IPL ticket booking form.</p>
 
-                <br><br>
+            <button onclick="location.href='booking.html'">
+                Open Booking Form
+            </button>
 
-                <label for="stand">Stand Category:</label>
-                <select id="stand" name="stand" required>
-                    <option value="">Select stand category</option>
-                    <option value="General">General</option>
-                    <option value="Premium">Premium</option>
-                    <option value="VIP">VIP</option>
-                </select>
-
-                <br><br>
-
-                <label for="tickets">Number of Tickets:</label>
-                <input type="number" id="tickets" name="tickets"
-                       min="1" placeholder="Enter number of tickets" required>
-
-                <br><br>
-
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name"
-                       placeholder="Enter your name" required>
-
-                <br><br>
-
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email"
-                       placeholder="Enter your email" required>
-
-                <br><br>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone"
-                       placeholder="Enter your phone number" required>
-
-                <br><br>
-
-                <input type="submit" value="Confirm Booking">
-            </form>
-
-            <!-- Booking Summary -->
-            <h3>Booking Summary</h3>
-
-            <p>Selected Match: Not Selected</p>
-            <p>Stand Category: Not Selected</p>
-            <p>Ticket Price: Rs. 0</p>
-            <p>Quantity: 0</p>
-            <p>Total Amount: Rs. 0</p>
         </section>
 
         <!-- My Bookings Section -->
         <section id="mybookings">
+
             <h2>My Ticket Bookings</h2>
 
             <table>
@@ -202,11 +164,14 @@
                 <tr>
                     <td colspan="6">No bookings available.</td>
                 </tr>
+
             </table>
+
         </section>
 
         <!-- Guidelines Section -->
         <section id="guidelines">
+
             <h2>Ticket Booking Guidelines</h2>
 
             <article>
@@ -232,13 +197,14 @@
                     sharp objects and other restricted materials.
                 </p>
             </article>
+
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 IPL Ticket Booking. All Rights Reserved.</p>
+        <p>© 2026 IPL Ticket Booking. All Rights Reserved.</p>
     </footer>
 
 </body>

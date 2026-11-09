@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IPL 2026 Ticket Booking</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>IPL 2026 Ticket Booking</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Booking Form -->
+        <section id="booking">
+
+            <h2>Book Your IPL Tickets</h2>
+
+            <form id="bookingForm" action="#" method="get"
+                  onsubmit="return false;">
+
+                <!-- Full Name -->
+                <label for="name">Full Name:</label>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your full name"
+                       minlength="3"
+                       maxlength="30"
+                       required>
+
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       maxlength="50"
+                       required>
+
+                <br><br>
+
+                <!-- Phone Number -->
+                <label for="phone">Phone Number:</label>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="Enter 10-digit phone number"
+                       pattern="[0-9]{10}"
+                       minlength="10"
+                       maxlength="10"
+                       required>
+
+                <br><br>
+
+                <!-- Match Selection -->
+                <label for="match">Select Match:</label>
+
+                <select id="match" name="match" required>
+
+                    <option value="">Choose a match</option>
+                    <option value="CSK vs MI">CSK vs MI</option>
+                    <option value="RCB vs KKR">RCB vs KKR</option>
+
+                </select>
+
+                <br><br>
+
+                <!-- Stand Category -->
+                <label for="stand">Stand Category:</label>
+
+                <select id="stand" name="stand" required>
+
+                    <option value="">Select stand category</option>
+                    <option value="General">General</option>
+                    <option value="Premium">Premium</option>
+                    <option value="VIP">VIP</option>
+
+                </select>
+
+                <br><br>
+
+                <!-- Number of Tickets -->
+                <label for="tickets">Number of Tickets:</label>
+
+                <input type="number"
+                       id="tickets"
+                       name="tickets"
+                       min="1"
+                       max="10"
+                       required
+                       placeholder="Enter number of tickets">
+
+                <br><br>
+
+                <!-- Seating Preference -->
+                <p>Preferred Seating:</p>
+
+                <input type="radio"
+                       id="near"
+                       name="preference"
+                       value="Near the Ground">
+
+                <label for="near">Near the Ground</label>
+
+                <input type="radio"
+                       id="upper"
+                       name="preference"
+                       value="Upper Stand">
+
+                <label for="upper">Upper Stand</label>
+
+                <br><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Booking">
+
+                <!-- Reset Button -->
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 IPL Ticket Booking. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
